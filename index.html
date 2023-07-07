@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="range">
+        <div class="header">
+          <h2 id="headerText">Password Generator</h2>
+          <p id="line"></p>
+        </div>
+
+        <div class="rangeContent">
+          <div class="rangeSlider">
+            <div class="rangeSliderLine" id="rangeSliderLine"></div>
+          </div>
+          <div class="rangeThumb" id="rangeThumb">
+            <div class="rangeValue">
+              <span class="rangeValueNumber" id="rangeNumber">5</span>
+            </div>
+          </div>
+          <input
+            type="range"
+            min="1"
+            max="20"
+            value="5"
+            class="rangeInput"
+            id="rangeInput"
+          />
+        </div>
+        <div class="rangeHeader">
+          <h3 id="rangeHeaderText">Password Length</h3>
+        </div>
+        <button id="generate">Generate Password</button>
+        <label class="checkMark"
+          ><p class="checkText">Include special characters</p>
+          <span></span>
+          <input type="checkbox" checked="checked" id="checkbox" />
+        </label>
+        <div class="output">
+          <div id="pwd_txt">
+            <p>Click on Generate Password</p>
+          </div>
+          <button id="clipboard" title="Generate Button">
+            <i class="fa fa-clone"></i>
+          </button>
+        </div>
+        <span id="copy_text"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
